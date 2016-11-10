@@ -1,0 +1,20 @@
+<div class="textwidget margin-top-30">
+	<p>No matter what you're craving, <em><strong>Restaurant to Room</strong></em> has you covered. Our fast and friendly delivery service brings you hot, fresh food, from a diverse choice of local restaurants.</p>
+</div>
+<div ng-show="!vm.restaurants">Loading...</div>
+<div class="widget">
+	<ul id="rest-container">
+		<!-- <li class="rest-items">
+			<h4>Some Title</h4>
+			<a href="#">
+				<img src="https://b.zmtcdn.com/data/collections/4661c54a624d8a055119af2d0ccde724_1463399059.jpg" alt="" style="width:250px;">
+			</a>
+			<span class="cusines">Description</span>
+		</li> -->
+		<li ng-repeat="rest in vm.restaurants">
+		 <a title="{{rest.collection.description}}" href="#"><strong ng-bind="rest.collection.description"></strong> <span>(American)</span></a></li>
+	</ul>
+</div>
+<!-- <script src="bower/angular/angular.min.js"></script>
+<script src="bower/angular-route/angular-route.min.js"></script>
+<script src="js/app/app.js"></script> -->

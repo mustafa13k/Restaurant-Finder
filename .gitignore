@@ -1,0 +1,8 @@
+mongo-start
+node_modules/
+public/bower/
+bin/
+data/
+.DS_Store
+.DS_Store/
+
